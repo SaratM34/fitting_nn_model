@@ -9,11 +9,12 @@ from planar_utils import plot_decision_boundary, sigmoid, load_planar_dataset, l
 
 np.random.seed(1)
 
-#Loading dataset
+#Dataset 1
 
-#X, Y = load_planar_dataset()
+X, Y = load_planar_dataset()
 
-noisy_circles, noisy_moons, blobs, gaussian_quantiles, no_structure = load_extra_datasets()
+#Dataset 2
+'''noisy_circles, noisy_moons, blobs, gaussian_quantiles, no_structure = load_extra_datasets()
 
 datasets = {"noisy_circles": noisy_circles,
             "noisy_moons": noisy_moons,
@@ -32,7 +33,7 @@ if dataset == "blobs":
     Y = Y%2
 
 # Visualize the data
-plt.scatter(X[0, :], X[1, :], c=Y, s=40, cmap=plt.cm.Spectral);
+plt.scatter(X[0, :], X[1, :], c=Y, s=40, cmap=plt.cm.Spectral);'''
 
 #print(X.shape) #(2, 400) 
 #print(Y.shape) #(1, 400) 
